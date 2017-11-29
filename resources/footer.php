@@ -1,8 +1,7 @@
-<?php
-
-/**
- * Add support for WordPress Multisite's wp-signup.php
- * Do not edit anything in this file unless you know what you're doing
- */
-
-echo \App\template('partials/footer');
+<?php // Add support for WordPress Multisite's wp-signup.php ?>
+        </div>
+        <?php do_action('get_footer');
+        echo \App\template('partials/footer');
+        wp_footer(); ?>
+    </body>
+</html>

@@ -1,9 +1,8 @@
-<?php
-
-/**
- * Add support for WordPress Multisite's wp-signup.php
- * Do not edit anything in this file unless you know what you're doing
- */
-
-echo \App\template('partials/head');
-echo \App\template('partials/header');
+<?php // Add support for WordPress Multisite's wp-signup.php ?>
+<!doctype html>
+    <html <?php language_attributes(); ?>>
+    <?= \App\template('partials/head'); ?>
+    <body <?php body_class(); ?>>
+    <?php do_action('get_header'); ?>
+    <?= \App\template('partials/header'); ?>
+    <div class="wrap container" role="document">
